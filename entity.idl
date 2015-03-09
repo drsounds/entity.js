@@ -1,0 +1,13 @@
+[Constructor]
+interface Resolver {
+    Promise request(string method, Object query, Object payload);
+    Promise login();
+
+}
+
+[Constructor]
+interface Entity {
+    Promise request(string method, Object query, Object payload);
+    Promise login();
+    attribute Resolver resolver;
+}
