@@ -9,8 +9,14 @@ For example, an mashup that finds a song, could support different music services
 ## Usage of an entity (with a resolver)
 
 ```JavaScript
-var car = new Entity('car');
-car.request('GET', {'model': 'a'}, null).then(function (result) {
+var track = new Entity('track');
+track.request('GET', {'title': 'Aquasphere', 'album': 'Aquasphere', 'artist': 'Dr. Sounds'}, null).then(function (result) {
     console.log(result); 
 });
+
+
 ```
+
+## Resolver
+
+```JavaScript

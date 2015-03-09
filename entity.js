@@ -111,7 +111,7 @@
             this.resolver = resolver;
         } else {
             // Else get resolver from the storage
-            this.resolver = Entity.resolver[entity];
+            this.resolver = new Entity.resolver[entity](entity);
         }
     };
 
